@@ -1,3 +1,7 @@
 # Jogo da Forca
-## Jogo da Forca desenvolvido em Python 3.10
+## Jogo da Forca desenvolvido em Python 3.10 e com IDE PyCharm da JetBrains
 Desenvolvido inteiramente em Python com uso apenas das libs nativas da linguagem e sem interface gráfica.
+A "palavra secreta" é escolhida de forma aleatória a partir de uma lista de palavras contidas em um arquivo ".txt" lido em tempo de execução pelo aplicativo. São mais de duzentas mil palavras na lista, permitindo um grande fator de "replay" no jogo.
+O número de chances dada ao usuário é diretamente proporcional ao tamanho da palavra selecionada, permitindo assim que palavras maiores e mais "difíceis" recebam maior número de tentativas, mantendo um nível de dificuldade homogêneo durante as diferentes partidas.
+A cada rodada o usuário escolhe uma letra, é indicada as posições em que tal letra se encontra na palavra secreta ao mesmo tempo em que é também exibida ao jogar uma lista contendo todas as letras já indicadas por ele. Há um tratamento impedindo que o jogador digite uma letra repetida e, assim,  "desperdice" uma de suas tentativas.
+Quando o usuário vai se aproximando do fim de suas tentativas restantes, gradativamente será apresentado a ele a construção de um boneco enforcado. Caso as tentativas restantes se esgotem, é apresentado o boneco inteiramente com uma mensagem de derrota e fim de jogo. Ao adivinhar todas as letras da palavra, por sua vez, causa a apresentação de uma mensagem indicando a vitória.
